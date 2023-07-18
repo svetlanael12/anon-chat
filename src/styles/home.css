@@ -1,0 +1,22 @@
+.home__id {
+  position: relative;
+}
+.home__copy-id {
+  position: absolute;
+  right: 0;
+  top: 0;
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url('../assets/svg/copy.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: transparent;
+
+  border: none;
+  cursor: pointer;
+
+  z-index: 10;
+}

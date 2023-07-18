@@ -1,0 +1,13 @@
+.btn-back {
+  background: transparent;
+  margin-bottom: 5px;
+  font-size: 1.6rem;
+  padding: 5px 15px;
+  color: var(--white);
+  border: none;
+
+  cursor: pointer;
+
+  position: fixed;
+  top: 10px;
+}

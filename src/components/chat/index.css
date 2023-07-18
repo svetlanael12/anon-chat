@@ -1,0 +1,7 @@
+.room__chat {
+  padding-top: 40px;
+  padding-bottom: 110px;
+
+  display: flex;
+  flex-direction: column;
+}

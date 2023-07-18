@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --dark: #111224;
+  --blue: #39a0fd;
+  --gray: #262739;
+  --light--gray: #5a5c6a;
+  --white: #fff;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+html {
+  font-size: 62.5%;
+}
+.App {
+  width: 100%;
+  padding: 10px;
+  /* min-height: 100vh; */
+  height: max-content;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: var(--dark);
+
+  z-index: -1;
+}
+.container {
+  margin: auto;
+  max-width: 600px;
+  width: 100%;
+}
+.input-custom {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid var(--blue);
+  border-radius: 12px;
+  font-size: 1.4rem;
+  color: var(--blue);
+}
+.input-custom:active,
+.input-custom:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 30px 2px rgba(57, 160, 253, 0.2);
+  -moz-box-shadow: 0px 0px 30px 2px rgba(57, 160, 253, 0.2);
+  box-shadow: 0px 0px 30px 2px rgba(57, 160, 253, 0.2);
+}
+button.btn__uniq-id {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--blue);
+  font-size: 1.4rem;
+
+  cursor: pointer;
+}
+button.neon {
+  margin: 10px 0;
+  width: 100%;
+  
+  border: 1px solid;
+  border-radius: 20px;
+  background-color: transparent;
+  font-size: 1.6rem;
+  padding: 15px;
+  transition: 0.2s;
+
+  color: var(--blue);
+
+  cursor: pointer;
+}
+button:disabled.neon {
+  opacity: 0.5;
+} 
+button:not(:disabled).neon:hover {
+  background-color: var(--blue);
+  color: #fff;
+  border: 1px solid var(--blue);
+  -webkit-box-shadow: 0px 0px 43px 17px rgba(57, 160, 253, 0.2);
+  -moz-box-shadow: 0px 0px 43px 17px rgba(57, 160, 253, 0.2);
+  box-shadow: 0px 0px 43px 17px rgba(57, 160, 253, 0.2);
+}
+.nav-link {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--blue);
+  text-decoration: none;
+}
+.pg-normal {
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10px 0;
 }

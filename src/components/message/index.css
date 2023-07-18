@@ -1,0 +1,44 @@
+.message {
+  max-width: 85%;
+  width: max-content;
+
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 20px;
+
+  position: relative;
+}
+.message.left {
+  align-self: flex-start;
+  background-color: var(--gray);
+  border-radius: 20px;
+
+  border-bottom-left-radius: 2px;
+}
+.message.right {
+  align-self: flex-end;
+  background-color: var(--blue);
+  border-bottom-right-radius: 2px;
+}
+.message__username {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+.message__username.me {
+  display: none;
+}
+.message__date {
+  position: absolute;
+  font-size: 0.9rem;
+  bottom: -15px;
+}
+.message.left .message__date {
+  left: 0;
+}
+.message.right .message__date {
+  right: 0;
+}
