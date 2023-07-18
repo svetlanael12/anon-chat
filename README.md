@@ -1,6 +1,6 @@
 # Анонимный чат для общения
 
-[Посетить страницу](https://anonym-chat-sv12.netlify.app/)  
+[Посетить страницу](https://anon-chat-el12.netlify.app/)  
 
 Разработано с использованием инструментов:
 - react (type script), 
